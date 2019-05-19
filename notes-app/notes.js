@@ -1,10 +1,6 @@
 const chalk = require('chalk');
 const fs = require('fs');
 
-const getNotes = () => {
-    return 'Your notes...';
-}
-
 const addNote = (title, body) => {
     const notes = loadNotes();
     const duplicationNotes = notes.find((note) => note.title === title)
